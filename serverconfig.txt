@@ -1,0 +1,91 @@
+﻿#这是一个TerrariaServer配置文档的范例
+#使用命令'./TerrariaServer -config serverconfig.txt'可以使用这个配置，或运行startserver.sh
+#请发送电子邮件到support@terraria.org报告crashlog.txt的崩溃
+
+#以下是可用命令行参数的列表：
+
+#-config <config file>				指定要使用的配置文件。
+#-port <7777>				指定要侦听的端口。
+#-players <number> / -maxplayers <50>	设置最大玩家数量。
+#-pass <password> / -password <password>	设置服务器密码。
+#-world <world file>				载入世界并自动启动服务器。
+#-autocreate <#>				如果在-world指定的路径中找不到任何世界，则创建一个世界。世界大小由下式指定：1（小型）、2（中型）和3（大型）。
+#-banlist <path>				指定banlist的位置。默认在工作目录中的“banlist.txt”。
+#-worldname <Ty>			使用-autocreate时，设定世界名称。
+#-secure					为服务器添加额外的作弊保护
+#-noupnp						Disables automatic port forwarding
+#-steam							Enables Steam Support
+#-lobby <friends> or <private>				Allows friends to join the server or sets it to private if Steam is enabled
+#-ip <ip address>					Sets the IP address for the server to listen on
+#-forcepriority <priority>				Sets the process priority for this task. If this is used the "priority" setting below will be ignored.
+#-disableannouncementbox				Disables the text announcements Announcement Box makes when pulsed from wire.
+#-announcementboxrange <number>				Sets the announcement box text messaging range in pixels, -1 for serverwide announcements.
+#-seed <seed>						Specifies the world seed when using -autocreate
+
+#remove the # in front of commands to enable them.
+
+#载入世界并自动启动服务器
+world=/home/ubuntu/terraria-server/Terraria/Worlds/hello_world.wld
+
+#如果找不到，则创建一个新世界。 世界大小由下式指定：1（小型）、2（中型）和3（大型）。
+autocreate=2
+
+#Sets the world seed when using autocreate
+seed=KLwD7Ls4X4qIuh6k
+
+#使用自动创建时设置世界名称
+worldname=hello world
+
+#Sets the difficulty of the world when using autocreate 0(classic), 1(expert), 2(master), 3(journey)
+difficulty=0
+
+#设置服务器上允许的最大玩家数。数字须在1到255之间
+maxplayers=20
+
+#设置端口号
+port=2333
+
+#设置服务器密码
+password=greatgame110
+
+#设置当天的消息
+motd=happy game！
+
+#设置存储世界文件的文件夹
+worldpath=/home/ubuntu/terraria-server/Terraria/Worlds/
+
+#banlist的位置。默认在工作目录中的“banlist.txt”。
+banlist=banlist.txt
+
+#添加额外的作弊保护。
+secure=1
+
+#Sets the server language from its language code. 
+#English = en-US, German = de-DE, Italian = it-IT, French = fr-FR, Spanish = es-ES, Russian = ru-RU, Chinese = zh-Hans, Portuguese = pt-BR, Polish = pl-PL,
+language=zh-Hans
+
+#Automatically forward ports with uPNP
+upnp=1
+
+#Reduces enemy skipping but increases bandwidth usage. The lower the number the less skipping will happen, but more data is sent. 0 is off.
+npcstream=60
+
+#默认系统优先级0：真实时间、1：高、2：高于普通、3：普通、4：低于普通、5：闲暇
+priority=1
+
+#Journey mode power permissions for every individual power. 0: Locked for everyone, 1: Can only be changed by host, 2: Can be changed by everyone
+#journeypermission_time_setfrozen=2
+#journeypermission_time_setdawn=2
+#journeypermission_time_setnoon=2
+#journeypermission_time_setdusk=2
+#journeypermission_time_setmidnight=2
+#journeypermission_godmode=2
+#journeypermission_wind_setstrength=2
+#journeypermission_rain_setstrength=2
+#journeypermission_time_setspeed=2
+#journeypermission_rain_setfrozen=2
+#journeypermission_wind_setfrozen=2
+#journeypermission_increaseplacementrange=2
+#journeypermission_setdifficulty=2
+#journeypermission_biomespread_setfrozen=2
+#journeypermission_setspawnrate=2
