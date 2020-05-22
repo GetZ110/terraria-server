@@ -25,7 +25,7 @@
 #remove the # in front of commands to enable them.
 
 #载入世界并自动启动服务器
-world=/home/ubuntu/terraria-server/Terraria/Worlds/hello_world.wld
+world=./Terraria/Worlds/hello_world.wld
 
 #如果找不到，则创建一个新世界。 世界大小由下式指定：1（小型）、2（中型）和3（大型）。
 autocreate=2
@@ -52,7 +52,7 @@ password=greatgame110
 motd=happy game！
 
 #设置存储世界文件的文件夹
-worldpath=/home/ubuntu/terraria-server/Terraria/Worlds/
+worldpath=./Terraria/Worlds/
 
 #banlist的位置。默认在工作目录中的“banlist.txt”。
 banlist=banlist.txt
