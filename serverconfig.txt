@@ -31,7 +31,7 @@ world=./Terraria/Worlds/hello_world.wld
 autocreate=2
 
 #Sets the world seed when using autocreate
-seed=KLwD7Ls4X4qIuh6k
+seed=ttoMTmWfUxEQMHqY
 
 #使用自动创建时设置世界名称
 worldname=hello world
